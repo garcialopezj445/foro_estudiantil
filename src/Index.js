@@ -12,7 +12,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 //routes
-app.use(require('./routes/Users'))
+app.use(require('./routes/Users'));
+app.use(require('./routes/Threads'));
 
 //Starting the server
 app.listen(app.get('port'), () => {
